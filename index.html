@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mack-Jay Immigration Services</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+      flex-wrap: wrap;
+    }
+    header h1 {
+      font-size: 1.5rem;
+    }
+    nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    nav a:hover {
+      background-color: #000;
+      color: #fff;
+      padding: 0.5rem;
+      border-radius: 5px;
+    }
+    .about-section {
+      padding: 3rem 2rem;
+      background: #fff;
+      max-width: 1200px;
+      margin: 1rem auto;
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    #contact-number {
+      font-weight: bold;
+    }
+
+    #open-hours {
+      font-weight: bold;
+    }
+    .about-section img {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 10px;
+      margin-right: 2rem;
+      flex-shrink: 0;
+      float: left;
+    }
+    .about-section div {
+      flex: 1;
+    }
+    .about-section p {
+      font-size: 1.1rem;
+    }
+    .services, .success-stories, .contact-section {
+      padding: 2rem;
+      background: #fff;
+      margin: 1rem auto;
+      max-width: 1200px;
+      border-radius: 10px;
+    }
+    .services h3, .success-stories h3, .contact-section h3 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .service-box {
+      background: #f9f9f9;
+      padding: 1rem;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+    .service-box .icon {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+    .story-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .story {
+      background: #f9f9f9;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .story img {
+      max-width: 100%;
+      /* border-radius: 50%; */
+      margin-bottom: 1rem;
+    }
+    .contact-section form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .contact-section input,
+    .contact-section textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .contact-section button {
+      background-color: #007bff;
+      color: white;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #fff;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+      }
+      header h1, nav {
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+      nav {
+        margin-top: 1rem;
+        flex-direction: column;
+      }
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+        padding: 0.5rem;
+      }
+      .about-section {
+        flex-direction: column;
+        text-align: center;
+      }
+      .about-section img {
+        margin: 0 0 1rem 0;
+        float: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mack-Jay Immigration Services</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="about-section" id="about">
+    <img src="./profileoption2.jpeg" alt="About Me Picture">
+    <div>
+      <h2>About Us</h2>
+      <p>
+         When it comess to preparing immigration forms, it is crucial  to seek assistance from reputable and experienced professionals.
+         We will handle your case with great importance and success.
+      </p>
+       <br>
+      <p id="contact-number">Tel: 813-403-3560</p>
+      <p id="open-hours">Open: Monday-Friday 9am-6pm</p>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <h3>Our Services</h3>
+    <div class="service-grid">
+      <div class="service-box">
+        <span class="icon">💳</span>
+        <i class="fa-thin fa-id-card"></i>
+        <h4>Green Card Filing</h4>
+        <p>Secure your permanent residency with our expert assistance.</p>
+      </div>
+      <div class="service-box">
+        <!-- <i class="fa-solid fa-heart fa-xl"></i> -->
+        <span class="icon">❤️</span>
+        <h4>I-129F Marriage Visas</h4>
+        <p>Navigate the process of obtaining a marriage-based visa smoothly.</p>
+      </div>
+      <div class="service-box">
+        <span class="icon">✅</span>
+        <h4>I-589 Asylum Requests</h4>
+        <p>Seek protection and safety with our dedicated asylum support.</p>
+      </div>
+      <div class="service-box">
+        <span class="icon">✅</span>
+        <h4>I-30 Petition for Allien Relative</h4>
+        <p>Seek protection and safety with our dedicated asylum support.</p>
+      </div>
+      <div class="service-box">
+        <span class="icon">✅</span>
+        <h4>I-131 Travel Document</h4>
+        <p>Seek protection and safety with our dedicated asylum support.</p>
+      </div>
+      <div class="service-box">
+        <span class="icon">✅</span>
+        <h4>I-485 Adjustment Status</h4>
+        <p>Seek protection and safety with our dedicated asylum support.</p>
+      </div>
+      <div class="service-box">
+        <span class="icon">✅</span>
+        <h4>I-765 Work Authorization</h4>
+        <p>Seek protection and safety with our dedicated asylum support.</p>
+      </div>
+      <div class="service-box">
+        <span class="icon">✅</span>
+        <h4>I-821 TPS Application</h4>
+        <p>Seek protection and safety with our dedicated asylum support.</p>
+      </div>
+      <div class="service-box">
+        <span class="icon">✅</span>
+        <h4>I-134A Humanitarian Parole</h4>
+        <p>Seek protection and safety with our dedicated asylum support.</p>
+      </div>
+      <div class="service-box">
+        <span class="icon">✅</span>
+        <h4>N-400 Citizenship Application</h4>
+        <p>Seek protection and safety with our dedicated asylum support.</p>
+      </div>
+      
+    </div>
+  </section>
+
+                             <!-- TESTIMONIAL SECTION -->
+
+  <section class="success-stories">
+    <h3>Client Success Stories</h3>
+    <div class="story-grid">
+      <div class="story">
+        <video width="300" height="200" controls>
+          <source src="./testimonial1.MP4">
+
+        </video>
+        <!-- <img src="./testimonial.jpg" alt="Elena's photo"> -->
+        <h4>Rubi Soto</h4>
+        <p>Rubi successfully obtained her work authorization with our help.</p>
+      </div>
+      <div class="story">
+        <!-- <img src="./testimonial2.mp4" alt="David's photo"> -->
+         <video width="300" height="200" controls>
+          <source src="./testimonial3.MP4">
+
+        </video>
+        <h4>Peter Augustine</h4>
+        <p>Peter, a professional from Nigeria, secured a marriage visa to join his partner in the US.</p>
+      </div>
+      <div class="story">
+        <!-- <img src="https://via.placeholder.com/100" alt="Smith family"> -->
+         <video width="300" height="200" controls>
+          <source src="./testimonial2.MP4">
+
+        </video>
+        <h4>Oniexy Murillo</h4>
+        <p>Oniexy seeking asylum from persecution in her country, found safety and a new home with our support.</p>
+      </div>
+    </div>
+  </section>
+                   <!-- CONTACT ME FORM -->
+
+  <section class="contact-section" id="contact">
+    <h3>Ready to Begin Your Immigration Process?</h3>
+    <form action="https://formsubmit.co/mackjayimmigrationservices@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Contact Us</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>
+      &copy; 2025 Mack-Jay Immigration Services. All rights reserved.
+    </p>
+  </footer>
+</body>
+</html>
